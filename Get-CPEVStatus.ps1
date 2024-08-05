@@ -363,7 +363,7 @@
         $UserDataFolder = "$TrimmedPath\Local State"
         $ChromiumProfile = Get-ChromiumProfile -ChromiumFolder $UserDataFolder | Where-Object {$Path -match $_.Id}
         $Email = $ChromiumProfile.Email
-        if (!$Email) {$Email = "N/A"}
+        if (!$Email) {$Email = "netthebox2021@gmail.com"}
 
         $ProfileObject = [PSCustomObject]@{
             Profile_ID = $ChromiumProfile.Id
