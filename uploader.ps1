@@ -1,6 +1,6 @@
 
 #CHANGE URL TO YOUR URL
-$url='https://discord.com/api/webhooks/1168586821467381820/h-MBHVPPWdCK3gsFubvUyitgQDscQ7X7mzt56tEpOYO1didWgmdUZYJM3tN77MTNAcdC';
+$url='';
 #Get PC Name+Date+Time
 $namepc = Get-Date -UFormat "$env:computername-$env:UserName-%m-%d-%Y_%H-%M-%S"
 
